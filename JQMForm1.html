@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset=utf-8" />
+   <title>jQueryMobile Form Example</title>
+
+   <link rel="stylesheet" href="CSS3Background2.css" />
+
+   <link rel="stylesheet"
+     href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+   <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+   <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+   </script>
+   <script src="jobScripts.js"></script>
+
+
+
+
+
+  </head>
+
+
+  <body>
+
+<div data-role="page" id="page1">
+   <header data-role="header" data-position="fixed">
+	 <h2><img src="https://authenticjobs.com/assets/images/assets/authenticjobs-light.v1463767349.svg" style="width:20%;"></img></h2>
+
+   </header>
+
+   <div data-role="content">
+     <form action="#" method="get">
+
+       <div data-role="fieldcontain">
+          <label for="searchinput">Search Jobs:</label>
+          <input id="searchinput" type="search" name="password" value=""  />
+       </div>
+
+        <div data-role="fieldcontain">
+	             <label for="searchinput2">Search Location:</label>
+	             <input id="searchinput2" type="search" name="password" value="Location"  />
+       </div>
+
+       <!-- drop-down list -->
+	   <div data-role="fieldcontain">
+	          <label for="select-choice" class="select">Select Your Job Type:</label>
+	          <select name="select-choice" id="select-choice">
+	            <option value="AA">All</option>
+	            <option value="MP">Full-Time</option>
+	            <option value="NP">Part-Time</option>
+	            <option value="NP">Freelance</option>
+	            <option value="ML">Moonlighting</option>
+	          </select>
+       </div>
+
+       <!-- drop-down list -->
+	   <div data-role="fieldcontain">
+			  <label for="select-choice" class="select">Skills:</label>
+			  <select name="select-choice" id="select-choice">
+				<option value="AA">All</option>
+				<option value="MP">Design</option>
+				<option value="NP">Programming</option>
+				<option value="NP">Project Management</option>
+			  </select>
+	   </div>
+
+       <div data-role="fieldcontain">
+         <label for="flip1">All Jobs</label>
+         <select name="flip1" id="flip1" data-role="slider">
+           <option value="off">Yes</option>
+           <option value="on">No</option>
+         </select>
+       </div>
+
+       <div data-role="fieldcontain">
+         <label for="slider">Compensation Per Year:</label>
+          <input type="range" name="slider" id="slider" value="50"
+                 min="0" max="500000" data-highlight="true"  />
+       </div>
+
+       <div data-role="fieldcontain">
+        <fieldset id="control1" data-role="controlgroup" data-type="horizontal">
+         <legend></legend>
+         <label for="checkbox-1">Relocation Assistance</label>
+         <input type="checkbox" name="checkbox-1"
+                id="checkbox-1" class="custom" />
+
+         <label for="checkbox-2">Visa Sponsorship</label>
+         <input type="checkbox" name="checkbox-2"
+                id="checkbox-2" class="custom" />
+
+         <label for="checkbox-3">Other</label>
+         <input type="checkbox" name="checkbox-3"
+                id="checkbox-3" class="custom" />
+        </fieldset>
+       </div>
+
+       <div class="ui-body ui-body-b">
+         <fieldset class="ui-grid-a">
+          <div class="ui-block-a"><button type="submit"
+               data-theme="d">Cancel</button></div>
+          <div class="ui-block-b"><button id="search_btn" input type="submit" data-theme="a" onclick="location='file:///C:/Authentic Jobs/JQMListView1.html'">Submit</button></div>
+         </fieldset>
+       </div>
+
+
+
+          <!--  SECTION	Search Results-->
+	   	 				<ul id="contents" data-theme="a" data-role="listview">
+	 				</ul>
+
+
+     </form>
+
+     <footer data-role="footer" data-position="fixed">
+	          <h3>Powered by Authentic Jobs</h3>
+     </footer>
+
+     </div>
+   </div>
+  </body>
+</html>
+
